@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" >
+ 
+            <com.apn.ui.Web
+                android:id="@+id/item_webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_marginTop="10dp"/>
+ 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/linerlayout"
+            android:background="#fff"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/but_home"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_styles"
+                android:gravity="center_vertical|center"
+                android:text="家"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@drawable/button_color" />
+
+            <Button
+                android:id="@+id/but_company"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_styles"
+                android:gravity="center_vertical|center"
+                android:text="公司"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@drawable/button_color" />
+
+            <Button
+                android:id="@+id/but_other"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/button_styles"
+                android:gravity="center_vertical|center"
+                android:text="新地点"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@drawable/button_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/linerlayout"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/item_title"
+                style="@style/list_view_text_un"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5sp"
+                android:paddingLeft="10sp"
+                android:paddingTop="5sp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

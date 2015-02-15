@@ -1,0 +1,20 @@
+ 
+<resources>
+    <string name="app_name">an</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="key">Hello world!</string>
+    <string name="delete">删除</string>
+    <string name="refresh">刷新</string>
+    
+    <string name="sever_url">htpp://60.190.87.101/quantum/jsp/</string>
+    
+    <string name="city">合肥</string>
+    <string name="temp">15°</string>
+    <string name="weather">晴转多云</string>
+    <string name="air">重度污染</string>
+    <string name="week">周一</string>
+    <string name="info">天气冷，建议着棉衣、皮夹克加羊毛衫等冬季服装。年老体弱者宜着厚棉衣或冬大衣。</string>
+ 
+</resources>
