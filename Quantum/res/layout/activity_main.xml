@@ -5,35 +5,44 @@
     android:background="#e7e9f6"
     tools:context=".MainActivity" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="300dip"
-        android:layout_marginTop="-120dip"
-        android:scaleType="fitXY"
-        android:src="@drawable/bkg_12_december" />
-
-    <ScrollView
+    <com.quantum.ui.ObservableScrollView
         android:id="@+id/scrollView"
+        android:layout_marginTop="-120dip"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
         android:scrollbars="none" >
-
+     
         <LinearLayout
             android:id="@+id/dismissable_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="110dip"
-                android:orientation="vertical" 
-                android:tag="index">
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="300dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/bkg_12_december"
+                android:tag="index" />
 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="45sp"
+                android:layout_marginTop="13sp"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:tag="last" >
+
+                <ImageButton
+                    android:id="@+id/button_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/button_set"
+                    android:src="@drawable/menu_setting" />
+            </LinearLayout>
         </LinearLayout>
-    </ScrollView>
+    </com.quantum.ui.ObservableScrollView>
 
 </RelativeLayout>

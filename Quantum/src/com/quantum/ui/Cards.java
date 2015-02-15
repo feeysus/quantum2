@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 
 public class Cards {
@@ -101,7 +102,12 @@ public class Cards {
 
 									}
 								}));
-				dismissableContainer.addView(dismissableView);
+				dismissableContainer.addView(dismissableView, 1);
+
+				LinearLayout.LayoutParams params_item = (LinearLayout.LayoutParams) dismissableView
+						.getLayoutParams();
+				params_item.topMargin = -100;
+				dismissableView.setLayoutParams(params_item);
 
 				Animation animation = AnimationUtils.loadAnimation(context,
 						R.anim.slide_up);
